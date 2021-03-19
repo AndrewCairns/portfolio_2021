@@ -1,0 +1,33 @@
+hr {
+  border: none;
+  border-bottom: 0.4rem solid $base-black;
+  height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+hr.hr--brand-primary {
+  border-color: $brand-color-primary;
+}
+
+hr.hr--brand-secondary {
+  border-color: $brand-color-secondary;
+}
+
+hr.hr--brand-tertiary {
+  border-color: $brand-color-tertiary;
+}
+
+hr.hr--short {
+  width: 25%;
+}
+hr.hr--medium {
+  width: 50%;
+}
+hr.hr--long {
+  width: 75%;
+}
+hr.hr--full {
+  width: 100%;
+}

@@ -1,0 +1,93 @@
+.section-home {
+  background-color: $brand-color-tertiary;
+}
+
+.WelcomeMe {
+  animation: 0.5s ease-in 1.5s both fade-in-welcome;
+}
+
+.Oval {
+  animation: 0.3s ease-in-out both fade-in-dot;
+}
+.OvalPulse {
+  animation: 1.5s ease-in-out 6.5s both infinite Pulse;
+}
+
+.Line {
+  animation: 0.3s ease-in-out both fade-in-line;
+}
+
+// Loop from 1-32 lines or dots.
+@for $i from 1 through 32 {
+  .Oval {
+    &:nth-child(#{$i}) {
+      animation-delay: 4 + ($i * (0.05s));
+    }
+  }
+  .Line {
+    &:nth-child(#{$i}) {
+      animation-delay: 3 + ($i * (0.05s));
+    }
+  }
+}
+
+@keyframes fade-in-dot {
+  0% {
+    opacity: 0;
+    stroke: white;
+    stroke-width: 15px;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.75;
+    stroke: white;
+    stroke-width: 1px;
+  }
+}
+
+@keyframes fade-in-line {
+  0% {
+    opacity: 0;
+    stroke: white;
+    stroke-width: 5px;
+    stroke-dasharray: 20px;
+  }
+
+  50% {
+    stroke: $brand-color-secondary;
+  }
+
+  100% {
+    opacity: 1;
+    stroke: white;
+    stroke-width: 2px;
+    stroke-dasharray: 5px;
+  }
+}
+
+@keyframes fade-in-welcome {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//center oval pulse
+@keyframes Pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

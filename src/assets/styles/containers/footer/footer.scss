@@ -1,0 +1,28 @@
+footer {
+  background-color: $brand-color-tertiary;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div {
+    display: flex;
+    align-items: flex-end;
+
+    a {
+      border-bottom: none;
+      &:hover {
+        border-bottom: none;
+      }
+
+      &:hover img {
+        opacity: 1;
+      }
+
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+header {
+  padding: 1rem 1rem;
+  background-color: $brand-color-tertiary;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a {
+    border-bottom: none;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      padding: 1rem;
+
+      a {
+        border-bottom: none;
+        padding: 0 0.5rem 0.5rem;
+
+        &:hover {
+          border-bottom: 3px solid $brand-color-secondary;
+        }
+      }
+    }
+  }
+}

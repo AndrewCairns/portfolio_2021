@@ -1,0 +1,188 @@
+h1 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  color: $primary-text-color;
+}
+
+h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: $primary-text-color;
+}
+
+h3 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1.17rem;
+  color: $primary-text-color;
+  line-height: 1.75rem;
+}
+
+h4 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: $primary-text-color;
+}
+
+h5 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 0.83rem;
+  color: $primary-text-color;
+}
+
+h6 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 0.67rem;
+  color: $primary-text-color;
+}
+
+p {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: $primary-text-color;
+  line-height: 1.375rem;
+}
+
+span {
+  font-size: 1rem;
+  color: $secondary-text-color;
+}
+
+a {
+  color: $primary-text-color;
+  text-decoration: none;
+  border-bottom: 3px solid $secondary-text-color;
+}
+
+a:hover {
+  border-bottom: 5px solid $secondary-text-color;
+}
+
+ul {
+  font-size: 1rem;
+  color: $primary-text-color;
+  line-height: 1.5rem;
+}
+
+.txt-align--left {
+  text-align: left;
+}
+
+.txt-align--center {
+  text-align: center;
+}
+
+.txt-align--right {
+  text-align: right;
+}
+
+.txt--brand-primary {
+  font-family: $font-brand-primary;
+}
+.txt--brand-secondary {
+  font-family: $font-brand-secondary;
+}
+
+.txt--color-primary {
+  color: $primary-text-color;
+}
+
+.txt--color-secondary {
+  color: $secondary-text-color;
+}
+
+.txt--bold {
+  font-weight: bold;
+}
+
+.txt--bolder {
+  font-weight: bolder;
+}
+
+.txt--italic {
+  font-style: italic;
+}
+
+.txt--light {
+  font-weight: light;
+}
+
+.txt--lighter {
+  font-weight: lighter;
+}
+
+.txt--uppercase {
+  text-transform: uppercase;
+}
+
+.txt--lowercase {
+  text-transform: lowercase;
+}
+
+.txt--capitalize {
+  text-transform: capitalize;
+}
+
+.txt--8 {
+  font-size: 0.8rem;
+}
+.txt--9 {
+  font-size: 0.9rem;
+}
+.txt--10 {
+  font-size: 1rem;
+}
+.txt--11 {
+  font-size: 1.1rem;
+}
+.txt--12 {
+  font-size: 1.2rem;
+}
+.txt--14 {
+  font-size: 1.4rem;
+}
+.txt--16 {
+  font-size: 1.6rem;
+}
+.txt--18 {
+  font-size: 1.8rem;
+}
+.txt--20 {
+  font-size: 2rem;
+}
+.txt--22 {
+  font-size: 2.2rem;
+}
+.txt--24 {
+  font-size: 2.4rem;
+}
+.txt--28 {
+  font-size: 2.8rem;
+}
+.txt--30 {
+  font-size: 3rem;
+}
+.txt--32 {
+  font-size: 3.2rem;
+}
+.txt--36 {
+  font-size: 3.6rem;
+}
+.txt--40 {
+  font-size: 4rem;
+}
+.txt--42 {
+  font-size: 4.2rem;
+}
+.txt--44 {
+  font-size: 4.4rem;
+}
+.txt--48 {
+  font-size: 4.8rem;
+}
