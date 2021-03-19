@@ -1,7 +1,10 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Link } from "react-router-dom";
 import Home from "./app/views/home/home";
-import Explore from "./app/views/explore/exlore";
+import Explore1 from "./app/views/explore/explore";
+import Explore2 from "./app/views/explore2/explore2";
+import Explore3 from "./app/views/explore3/explore3";
+import VerticalNav from "./app/components/verticalNav/verticalNav";
 import "./App.scss";
 import logo from "./assets/images/logo.svg";
 import mail from "./assets/images/mail.png";
@@ -9,6 +12,7 @@ import github from "./assets/images/github.png";
 import linkedin from "./assets/images/linkedin.png";
 import twitter from "./assets/images/twitter.png";
 import insta from "./assets/images/instagram.png";
+import { ScrollingProvider } from "react-scroll-section";
 
 function App() {
   var getDate = new Date();
@@ -16,61 +20,67 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
-        <header>
+      <ScrollingProvider>
+        <BrowserRouter>
+          <header>
+            <div className="c-contain">
+              <div className="logo">
+                <Link to="/home">
+                  <img src={logo} alt="Andrew Cairns' Logo" />
+                </Link>
+              </div>
+              <nav>
+                <ul>
+                  <li className="txt--14">
+                    <Link to="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+          <Home />
+          <VerticalNav />
+          <Explore1 />
+          <Explore2 />
+          <Explore3 />
+
           <div className="c-contain">
-            <div className="logo">
-              <Link to="/home">
-                <img src={logo} alt="Andrew Cairns' Logo" />
-              </Link>
-            </div>
-            <nav>
-              <ul>
-                <li className="txt--14">
-                  <Link to="/contact">Contact</Link>
-                </li>
-              </ul>
-            </nav>
+            <Switch>
+              {/* <Route exact path="/explore" component={Explore} /> */}
+            </Switch>
           </div>
-        </header>
 
-        <Home />
+          <footer className="u-p-gi">
+            <div className="c-contain">
+              <div>
+                <img src={logo} alt="Andrew Cairns' logo" />
+                <p className="txt--14">
+                  © {getYear} Andrew Cairns. All rights reserved.
+                </p>
+              </div>
 
-        <div className="c-contain">
-          <Switch>
-            <Route exact path="/explore" component={Explore} />
-          </Switch>
-        </div>
-
-        <footer className="u-p-gi">
-          <div className="c-contain">
-            <div>
-              <img src={logo} alt="Andrew Cairns' logo" />
-              <p className="txt--14">
-                © {getYear} Andrew Cairns. All rights reserved.
-              </p>
+              <div className="socials">
+                <a href="mailto:cairns-a3@ulster.ac.uk">
+                  <img src={mail} alt="Andrew Cairns' mail link" />
+                </a>
+                <a href="https://github.com/AndrewCairns">
+                  <img src={github} alt="Andrew Cairns' github link" />
+                </a>
+                <a href="https://www.linkedin.com/in/andrew-cairns-15888853/">
+                  <img src={linkedin} alt="Andrew Cairns' linkedin link" />
+                </a>
+                <a href="https://twitter.com/cairnsy17">
+                  <img src={twitter} alt="Andrew Cairns' twitter link" />
+                </a>
+                <a href="https://www.instagram.com/cairnsy17/">
+                  <img src={insta} alt="Andrew Cairns' instagram link" />
+                </a>
+              </div>
             </div>
-
-            <div className="socials">
-              <a href="mailto:cairns-a3@ulster.ac.uk">
-                <img src={mail} alt="Andrew Cairns' mail link" />
-              </a>
-              <a href="https://github.com/AndrewCairns">
-                <img src={github} alt="Andrew Cairns' github link" />
-              </a>
-              <a href="https://www.linkedin.com/in/andrew-cairns-15888853/">
-                <img src={linkedin} alt="Andrew Cairns' linkedin link" />
-              </a>
-              <a href="https://twitter.com/cairnsy17">
-                <img src={twitter} alt="Andrew Cairns' twitter link" />
-              </a>
-              <a href="https://www.instagram.com/cairnsy17/">
-                <img src={insta} alt="Andrew Cairns' instagram link" />
-              </a>
-            </div>
-          </div>
-        </footer>
-      </BrowserRouter>
+          </footer>
+        </BrowserRouter>
+      </ScrollingProvider>
     </div>
   );
 }

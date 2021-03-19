@@ -23,7 +23,7 @@ function Home() {
               </p>
             </Col>
             <Col xs={12} sm={12} md={8} lg={8}>
-              <div class="drop">
+              <div className="drop">
                 <Portrait2 width="100%" height="100%" />
               </div>
             </Col>
