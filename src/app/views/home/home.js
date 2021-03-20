@@ -1,28 +1,37 @@
 import React from "react";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import { ReactComponent as Portrait2 } from "../../../assets/images/portrait2.svg";
+import IndexBlock from "../../components/indexBlock/indexBlock";
 
 function Home() {
   return (
     <section className="section-home">
       <div className="c-contain">
         <Grid fluid>
-          <Row middle="xs">
-            <Col xs={12} sm={12} md={4} lg={4}>
-              <h1 className="txt--20 txt--uppercase">
-                I'm Andrew ! <br /> I build websites.
-              </h1>
-              <hr className="hr--short hr--brand-secondary u-vr--gi" />
-              <p className="txt--brand-secondary txt--color-secondary txt--8">
-                I am an enthusiastic, adaptable and driven Front-end engineer
-                with experience in both academia and industry. I have a PhD in
-                medical informatics. I thrive in both the competitive,
-                fast-paced environment of start-up businesses, and enterprise
-                level application development, striving to deliver product(s) of
-                optimum quality.
-              </p>
+          <Row middle="xs" className="intro-column-reverse">
+            <Col xs={12} sm={12} md={6} lg={6}>
+              <Row top="xs">
+                <Col xs={12} sm={12} md={3} lg={3}>
+                  <IndexBlock index="01" indexValue="Introduction" />
+                </Col>
+                <Col xs={12} sm={12} md={1} lg={1}></Col>
+                <Col xs={12} sm={12} md={8} lg={8}>
+                  <h1 className="txt--20 txt--uppercase">
+                    I'm Andrew ! <br /> I build websites.
+                  </h1>
+                  <hr className="hr--short hr--brand-secondary u-vr--gi" />
+                  <p className="txt--brand-secondary txt--color-body txt--8">
+                    I am an enthusiastic, adaptable and driven Front-end
+                    engineer with experience in both academia and industry. I
+                    have a PhD in medical informatics. I thrive in both the
+                    competitive, fast-paced environment of start-up businesses,
+                    and enterprise level application development, striving to
+                    deliver product(s) of optimum quality.
+                  </p>
+                </Col>
+              </Row>
             </Col>
-            <Col xs={12} sm={12} md={8} lg={8}>
+            <Col xs={8} sm={8} md={6} lg={6}>
               <div className="drop">
                 <Portrait2 width="100%" height="100%" />
               </div>

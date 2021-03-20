@@ -31,3 +31,10 @@ hr.hr--long {
 hr.hr--full {
   width: 100%;
 }
+
+hr.hr--thin {
+  border-bottom-width: 0.2rem;
+}
+hr.hr--thick {
+  border-bottom-width: 0.6rem;
+}

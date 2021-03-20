@@ -2,7 +2,7 @@ import React from "react";
 import { useScrollSection } from "react-scroll-section";
 
 function VerticalNav() {
-  const explore1 = useScrollSection("explore1");
+  const engineer = useScrollSection("engineer");
   const explore2 = useScrollSection("explore2");
   const explore3 = useScrollSection("explore3");
 
@@ -10,8 +10,8 @@ function VerticalNav() {
     <nav className="verticalNav">
       <ul>
         <li
-          onClick={explore1.onClick}
-          className={explore1.selected ? "selected" : ""}
+          onClick={engineer.onClick}
+          className={engineer.selected ? "selected" : ""}
         ></li>
         <li
           onClick={explore2.onClick}

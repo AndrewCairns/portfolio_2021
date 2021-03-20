@@ -13,6 +13,7 @@ import linkedin from "./assets/images/linkedin.png";
 import twitter from "./assets/images/twitter.png";
 import insta from "./assets/images/instagram.png";
 import { ScrollingProvider } from "react-scroll-section";
+import Engineer from "./app/views/Engineer/Engineer";
 
 function App() {
   var getDate = new Date();
@@ -40,7 +41,9 @@ function App() {
           </header>
 
           <Home />
+          <Engineer />
           <VerticalNav />
+
           <Explore1 />
           <Explore2 />
           <Explore3 />

@@ -1,2 +1,13 @@
 @import "./padding/padding.scss";
 @import "./vr/vr.scss";
+
+// flexbox utilities not covered by react-flexbox-grid
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}

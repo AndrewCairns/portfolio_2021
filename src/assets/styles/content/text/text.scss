@@ -47,6 +47,7 @@ p {
   font-size: 1rem;
   color: $primary-text-color;
   line-height: 1.375rem;
+  max-width: 500px;
 }
 
 span {
@@ -97,12 +98,12 @@ ul {
   color: $secondary-text-color;
 }
 
-.txt--bold {
-  font-weight: bold;
+.txt--color-tertiary {
+  color: $tertiary-text-color;
 }
 
-.txt--bolder {
-  font-weight: bolder;
+.txt--color-body {
+  color: $body-text-color;
 }
 
 .txt--italic {
@@ -110,11 +111,23 @@ ul {
 }
 
 .txt--light {
-  font-weight: light;
+  font-weight: 300;
 }
 
-.txt--lighter {
-  font-weight: lighter;
+.txt--normal {
+  font-weight: 400;
+}
+
+.txt--bold {
+  font-weight: 500;
+}
+
+.txt--bolder {
+  font-weight: 600;
+}
+
+.txt--black {
+  font-weight: 800;
 }
 
 .txt--uppercase {

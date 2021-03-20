@@ -1,0 +1,38 @@
+.index-block {
+  display: flex;
+  align-items: baseline;
+  @media screen and (min-width: $medium) {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding: 0 0 10px 0;
+
+    @media screen and (min-width: $medium) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .rotation-block {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 10px;
+  }
+
+  @media screen and (min-width: $medium) {
+    .rotation-block {
+      display: block;
+      padding: 0;
+    }
+
+    .rotation-block * {
+      transform: rotate(-90deg);
+    }
+    .rotation-block hr {
+      margin: 35px 0px 80px 0px;
+    }
+  }
+}

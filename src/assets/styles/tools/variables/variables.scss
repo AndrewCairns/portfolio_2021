@@ -1,3 +1,8 @@
+// Screens
+$small: 510px;
+$medium: 768px;
+$large: 1024px;
+
 // Colours
 
 $base-white: #fff;
@@ -5,7 +10,7 @@ $base-grey-1: #eeeeee;
 $base-grey-2: #dddddd;
 $base-grey-3: #cccccc;
 $base-grey-4: #bbbbbb;
-$base-grey-5: #9a9a9a;
+$base-grey-5: #828282;
 $base-grey-6: #333333;
 $base-black: #000;
 
@@ -14,7 +19,9 @@ $brand-color-secondary: #e53d27;
 $brand-color-tertiary: #ececec;
 
 $primary-text-color: $base-black;
-$secondary-text-color: #828282;
+$secondary-text-color: $brand-color-secondary;
+$tertiary-text-color: $base-grey-3;
+$body-text-color: $base-grey-5;
 
 // Fonts
 

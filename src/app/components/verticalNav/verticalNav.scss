@@ -5,6 +5,10 @@ nav.verticalNav ul {
   display: flex;
   flex-direction: column;
 
+  @media screen and (max-width: $medium) {
+    display: none;
+  }
+
   li {
     list-style-type: none;
     width: 30px;
