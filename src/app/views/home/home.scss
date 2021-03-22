@@ -16,9 +16,9 @@
 .Oval {
   animation: 0.3s ease-in-out both fade-in-dot;
 }
-// .OvalPulse {
-//   animation: 1.5s ease-in-out 6.5s both infinite Pulse;
-// }
+.OvalPulse {
+  animation: 1.5s ease-in-out 6.5s both alternate 5 Pulse;
+}
 
 .Line {
   animation: 0.3s ease-in-out both fade-in-line;
@@ -87,14 +87,11 @@
 }
 
 //center oval pulse
-// @keyframes Pulse {
-//   0% {
-//     opacity: 0;
-//   }
-//   50% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 0;
-//   }
-// }
+@keyframes Pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

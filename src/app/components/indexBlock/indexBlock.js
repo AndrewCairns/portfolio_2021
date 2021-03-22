@@ -8,7 +8,7 @@ function IndexBlock({ index, indexValue }) {
       </h1>
       <div className="rotation-block">
         <hr className="hr--thin" />
-        <h4 className="txt--8 txt--normal">
+        <h4 className="txt--8 txt--light">
           {indexValue ? indexValue : "Section Name"}
         </h4>
       </div>
