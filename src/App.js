@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Link } from "react-router-dom";
 import Home from "./app/views/home/home";
-import Explore1 from "./app/views/explore/explore";
-import Explore2 from "./app/views/explore2/explore2";
+import Explore from "./app/views/explore/explore";
 import Explore3 from "./app/views/explore3/explore3";
 import VerticalNav from "./app/components/verticalNav/verticalNav";
 import "./App.scss";
@@ -13,7 +12,7 @@ import linkedin from "./assets/images/linkedin.png";
 import twitter from "./assets/images/twitter.png";
 import insta from "./assets/images/instagram.png";
 import { ScrollingProvider } from "react-scroll-section";
-import Engineer from "./app/views/Engineer/Engineer";
+import Engineer from "./app/views/engineer/engineer";
 
 function App() {
   var getDate = new Date();
@@ -42,10 +41,9 @@ function App() {
 
           <Home />
           <Engineer />
+          <Explore />
           <VerticalNav />
 
-          <Explore1 />
-          <Explore2 />
           <Explore3 />
 
           <div className="c-contain">

@@ -1,0 +1,14 @@
+.section-explore {
+  background-color: $brand-color-primary;
+  min-height: 100vh;
+  display: flex;
+  padding-top: 2rem;
+
+  > * {
+    width: 100%;
+  }
+
+  * {
+    color: $base-white;
+  }
+}

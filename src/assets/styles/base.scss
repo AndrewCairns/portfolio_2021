@@ -10,9 +10,13 @@
   box-sizing: border-box;
 }
 
-html * {
+html *:not(svg text) {
   font-family: $font-brand-primary;
-  font-size: 62.5%;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+svg text {
+  stroke: inherit;
+  stroke-width: inherit;
 }

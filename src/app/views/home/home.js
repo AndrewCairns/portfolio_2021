@@ -37,7 +37,7 @@ function Home() {
               </p>
             </Col>
             <Col xs={8} sm={8} md={6} lg={6}>
-              <div className="drop">
+              <div>
                 <Portrait2 width="100%" height="100%" />
               </div>
             </Col>
