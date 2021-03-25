@@ -17,6 +17,5 @@ html *:not(svg text) {
 }
 
 svg text {
-  stroke: inherit;
-  stroke-width: inherit;
+  stroke: none;
 }

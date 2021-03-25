@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Section } from "react-scroll-section";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import IndexBlock from "../../components/indexBlock/indexBlock";
 import Button from "../../components/button/button";
 import MoreBlock from "../../components/moreBlock/moreBlock";
 import explorations from "../../../datastore/explorations.json";
-import { ReactComponent as MapBG } from "../../../assets/images/mapbg.svg";
+import { ReactComponent as MapBG } from "../../../assets/images/mapbg6.svg";
+import { useScrollSection } from "react-scroll-section";
 
 function Explore() {
-  console.log(explorations);
+  const explore = useScrollSection("explore-Section");
+
+  const [activeArea, setActiveArea] = useState(false);
+
+  useEffect(() => {
+    if (explore.selected) {
+      setActiveArea(true);
+    }
+  }, [explore.selected]); // IMPORTANT, This will cause react to update depending on change of this value
+
   return (
     <>
-      <Section id="explore-Section"></Section>
+      <Section
+        id="explore-Section"
+        className={explore.selected || activeArea ? "activated" : null}
+      ></Section>
       <section className="section-explore">
         <div className="c-contain">
           <Grid fluid className="border-left">
@@ -22,7 +35,7 @@ function Explore() {
               <Col xs={12} sm={12} md={4} lg={4}>
                 <MapBG width="300%" height="300%" />
               </Col>
-              <Col xs={12} sm={12} md={7} lg={7}>
+              <Col xs={12} sm={12} md={7} lg={7} className="contentArea">
                 <h1 className="txt--36 txt--uppercase txt--color-body">
                   Explore
                 </h1>
@@ -36,10 +49,12 @@ function Explore() {
                   <br /> <br />
                   Explore some of my recent expeditions in nature below.
                 </h3>
-                <hr className="hr--short hr--brand-secondary u-vr--enormous" />
-                <h2 className="txt--black txt--12 u-vr--sm">Hare's Gap</h2>
+                <hr className="hr--short hr--brand-secondary u-vr-top--md" />
+                <h2 className="txt--black txt--12 u-vr-top--vast contentLocationArea">
+                  Hare's Gap
+                </h2>
 
-                <Row>
+                <Row className="contentLocationArea">
                   <Col xs={12} sm={12} md={6} lg={6}>
                     <p className="txt--brand-secondary txt--color-body txt--8">
                       The Hare’s Gap is the most dramatic mountain pass in the
