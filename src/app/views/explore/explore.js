@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Section } from "react-scroll-section";
+import { Section, useScrollSection } from "react-scroll-section";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import IndexBlock from "../../components/indexBlock/indexBlock";
 import Button from "../../components/button/button";
 import MoreBlock from "../../components/moreBlock/moreBlock";
 import explorations from "../../../datastore/explorations.json";
 import { ReactComponent as MapBG } from "../../../assets/images/mapbg6.svg";
-import { useScrollSection } from "react-scroll-section";
 
 function Explore() {
   const explore = useScrollSection("explore-Section");

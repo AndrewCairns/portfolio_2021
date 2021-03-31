@@ -1,0 +1,45 @@
+#experiment-Section {
+  + .section-experiment {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  &.activated {
+    + .section-experiment {
+      .item {
+        animation: 0.3s ease-in-out both fade-in;
+
+        &:hover {
+          animation-fill-mode: none;
+          opacity: 1;
+          transition: 0.3s ease-in-out;
+        }
+      }
+      // Loop from 1-32 lines or dots.
+      @for $i from 1 through 12 {
+        .item {
+          &:nth-child(#{$i}) {
+            animation-delay: 1 + ($i * (0.03s));
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+}

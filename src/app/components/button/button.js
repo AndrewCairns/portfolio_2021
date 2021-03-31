@@ -1,9 +1,9 @@
 import React from "react";
 
-function Button({ content, symbol }) {
+function Button({ content, symbol, varient }) {
   return (
     <>
-      <button className="btn">
+      <button className={"btn " + varient}>
         {content}
         {symbol ? <span className="symbol">{symbol}</span> : ""}
       </button>

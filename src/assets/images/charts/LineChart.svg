@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="130px" viewBox="0 0 175 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Line Chart</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Artboard" transform="translate(-488.000000, -899.000000)">
+            <g id="Line-Chart" transform="translate(489.000000, 899.000000)">
+                <g id="Axis" stroke="#465741">
+                    <line x1="0.5" y1="128.5" x2="172.5" y2="128.5" id="Line-3" stroke-width="2"></line>
+                    <line x1="2.5" y1="0.5" x2="5.5" y2="0.5" id="Line-4"></line>
+                    <line x1="2.5" y1="26.25" x2="5.5" y2="26.25" id="Line-4"></line>
+                    <line x1="2.5" y1="52" x2="5.5" y2="52" id="Line-4"></line>
+                    <line x1="2.5" y1="77.75" x2="5.5" y2="77.75" id="Line-4"></line>
+                    <line x1="2.5" y1="103.5" x2="5.5" y2="103.5" id="Line-4"></line>
+                </g>
+                <g id="Data" transform="translate(21.851562, 25.265625)" stroke-width="2">
+                    <polyline id="Line-5" stroke="#FE4746" points="0.205078125 36.3632813 44.8632812 14.9726563 85.5078125 30.5644531 125.744141 7.35774831e-15"></polyline>
+                    <polyline id="Line-5" stroke="#465741" points="-5.04485342e-13 13.7246094 45.1914062 58.5664062 80.4824219 13.3515625 119.998047 36.71875"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+.grid {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: auto;
+  column-gap: 25px;
+  row-gap: 25px;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+
+  .item {
+    align-self: center;
+    justify-self: center;
+  }
+}

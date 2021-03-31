@@ -1,15 +1,37 @@
 .btn {
   padding: 0.75rem 2rem;
   border: 2px solid $brand-color-secondary;
-  border-radius: 20px;
+  border-radius: 50px;
   text-align: center;
   background-color: transparent;
   font-size: 0.75rem;
+
+  &.light {
+    color: $body-text-color;
+
+    span.symbol {
+      color: $body-text-color;
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:hover > span.symbol,
+    &:active > span.symbol,
+    &:focus > span.symbol {
+      color: $base-white;
+    }
+  }
 
   &:hover,
   &:active,
   &:focus {
     background-color: $brand-color-secondary;
+  }
+
+  &:hover *,
+  &:active *,
+  &:focus * {
     color: $base-white;
   }
 

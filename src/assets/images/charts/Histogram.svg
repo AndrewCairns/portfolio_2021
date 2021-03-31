@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="175px" height="123px" viewBox="0 0 175 123" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Histogram</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-488.000000, -637.000000)">
+            <g id="Histogram" transform="translate(489.000000, 637.000000)">
+                <g id="Axis" transform="translate(0.000000, 121.000000)" stroke="#212641" stroke-linecap="round" stroke-width="2">
+                    <line x1="0.5" y1="0.5" x2="172.5" y2="0.5" id="Line-3"></line>
+                </g>
+                <g id="Data" transform="translate(23.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#BC2A3A" x="0" y="71" width="21" height="49"></rect>
+                    <rect id="Rectangle" fill="#465741" x="36" y="51" width="21" height="69"></rect>
+                    <rect id="Rectangle" fill="#FE4746" x="72" y="15" width="21" height="105"></rect>
+                    <rect id="Rectangle" fill="#E03642" x="108" y="0" width="21" height="120"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

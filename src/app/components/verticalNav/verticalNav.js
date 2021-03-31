@@ -5,7 +5,7 @@ function VerticalNav() {
   const intro = useScrollSection("intro-Section");
   const engineer = useScrollSection("engineer-Section");
   const explore = useScrollSection("explore-Section");
-  const explore3 = useScrollSection("explore3");
+  const experiment = useScrollSection("experiment-Section");
 
   return (
     <nav className="verticalNav">
@@ -23,12 +23,12 @@ function VerticalNav() {
           className={explore.selected ? "selected" : ""}
         ></li>
         <li
-          onClick={explore3.onClick}
-          className={explore3.selected ? "selected" : ""}
+          onClick={experiment.onClick}
+          className={experiment.selected ? "selected" : ""}
         ></li>
         <li
-          onClick={explore3.onClick}
-          className={explore3.selected ? "selected" : ""}
+          onClick={experiment.onClick}
+          className={experiment.selected ? "selected" : ""}
         ></li>
       </ul>
     </nav>

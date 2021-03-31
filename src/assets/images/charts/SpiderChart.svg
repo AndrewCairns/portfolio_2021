@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="191px" height="174px" viewBox="0 0 191 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Spider chart</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-771.000000, -614.000000)">
+            <g id="Spider-chart" transform="translate(771.500000, 614.000000)">
+                <g id="Circles">
+                    <circle id="Oval" stroke="#465741" fill-opacity="0.131829108" fill="#D8D8D8" cx="95" cy="87" r="73"></circle>
+                    <circle id="Oval" stroke="#465741" stroke-width="0.8" fill-opacity="0.131829108" fill="#D8D8D8" cx="95.5" cy="87.5" r="58.5"></circle>
+                    <circle id="Oval" stroke="#465741" stroke-width="0.64" fill-opacity="0.131829108" fill="#D8D8D8" cx="95" cy="87" r="47"></circle>
+                    <circle id="Oval" stroke="#465741" stroke-width="0.512" fill-opacity="0.131829108" fill="#D8D8D8" cx="95.5" cy="87.5" r="37.5"></circle>
+                    <circle id="Oval" stroke="#465741" stroke-width="0.5" fill-opacity="0.131829108" fill="#D8D8D8" cx="95" cy="87" r="30"></circle>
+                    <g id="Axis" opacity="0.500209263" transform="translate(10.000000, 3.000000)" stroke="#FFFFFF" stroke-linecap="square">
+                        <line x1="85.5" y1="86.5" x2="147.5" y2="25.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="170.5" y2="86.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="147.5" y2="148.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="85.5" y2="169.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="25.5" y2="146.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="0.5" y2="86.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="24.5" y2="25.5" id="Line-6"></line>
+                        <line x1="85.5" y1="86.5" x2="85.5" y2="0.5" id="Line-6"></line>
+                    </g>
+                    <text id="A" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="92.936" y="8">A</tspan>
+                    </text>
+                    <text id="B" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="152.94" y="33">B</tspan>
+                    </text>
+                    <text id="D" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="150.696" y="150">D</tspan>
+                    </text>
+                    <text id="E" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="93.316" y="172">E</tspan>
+                    </text>
+                    <text id="F" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="34.444" y="151">F</tspan>
+                    </text>
+                    <text id="G" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="8.916" y="93">G</tspan>
+                    </text>
+                    <text id="H" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="30.768" y="34">H</tspan>
+                    </text>
+                    <text id="C" font-family="Montserrat-Bold, Montserrat" font-size="8" font-weight="bold" fill="#465741">
+                        <tspan x="175.068" y="93">C</tspan>
+                    </text>
+                </g>
+                <g id="Data" transform="translate(36.000000, 27.000000)">
+                    <path d="M61.5986328,89.4326172 C69.7492502,89.4326172 89.808664,109.907442 100.651367,101.818359 C114.421118,91.5455843 97.8994141,68.5120545 97.8994141,58.1611328 C97.8994141,50.779672 112.31129,32.5235692 108.266602,26.9873047 C102.17333,18.6469916 73.1864845,30.4335938 62.0664062,30.4335938 C52.7108993,30.4335938 37.9908832,29.433467 31.9130859,35.6171875 C25.9713738,41.6624512 30.5898438,51.1108038 30.5898438,60.2568359 C30.5898438,66.1233873 7.60064104,84.2058813 10.3330078,91.0029297 C16.2177975,105.64196 48.963645,89.4326172 61.5986328,89.4326172 Z" id="Oval" stroke="#E03642" stroke-width="2" fill-opacity="0.873880026" fill="#E03642"></path>
+                    <path d="M62.4472656,119.592773 C70.597883,119.592773 74.2490937,96.5861528 85.0917969,88.4970703 C98.8615479,78.2242952 89.9570312,69.3645936 89.9570312,59.0136719 C89.9570313,51.632211 92.4040631,42.1427098 88.359375,36.6064453 C82.266103,28.2661322 74.0233986,2.23046875 62.9033203,2.23046875 C53.5478133,2.23046875 9.21158634,7.12389666 3.13378906,13.3076172 C-2.80792307,19.3528809 22.9052734,51.309046 22.9052734,60.4550781 C22.9052734,66.3216295 18.5078676,80.1599829 21.2402344,86.9570312 C27.1250241,101.596062 49.8122778,119.592773 62.4472656,119.592773 Z" id="Oval" stroke="#F05440" stroke-width="2" fill-opacity="0.648000437" fill="#F05440"></path>
+                    <circle id="Oval" fill="#F05440" cx="23" cy="59" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="2" cy="13" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="21" cy="86" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="62" cy="119" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="90" cy="83" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="89" cy="37" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="89" cy="60" r="2"></circle>
+                    <circle id="Oval" fill="#F05440" cx="63" cy="2" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="107" cy="26" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="10" cy="92" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="30" cy="60" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="31" cy="36" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="64" cy="30" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="61" cy="89" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="97" cy="59" r="2"></circle>
+                    <circle id="Oval" fill="#D5443D" cx="102" cy="99" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
