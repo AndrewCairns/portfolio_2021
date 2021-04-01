@@ -13,6 +13,7 @@ import insta from "./assets/images/instagram.png";
 import { ScrollingProvider } from "react-scroll-section";
 import Engineer from "./app/views/engineer/engineer";
 import Experiment from "./app/views/experiment/experiment";
+import Experience from "./app/views/experience/experience";
 
 function App() {
   var getDate = new Date();
@@ -43,6 +44,7 @@ function App() {
           <Engineer />
           <Explore />
           <Experiment />
+          <Experience />
           <VerticalNav />
 
           <div className="c-contain">

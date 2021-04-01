@@ -1,0 +1,90 @@
+#experience-Section {
+  + .section-experience {
+    background-color: $brand-color-primary;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 2rem;
+
+    > * {
+      width: 100%;
+    }
+
+    * {
+      color: $base-white;
+    }
+
+    svg {
+      z-index: 1;
+    }
+
+    .contentArea {
+      z-index: 2;
+      opacity: 0;
+      transition: 2s ease-in-out 5s;
+      animation: 0.5s ease-in 2s both fade-in-welcome;
+
+      .contentLocationArea {
+        animation: 0.5s ease-in 11.5s both fade-in-welcome;
+      }
+    }
+  }
+
+  &.activated {
+    + .section-experience {
+      .contentArea {
+        opacity: 1;
+        margin-top: 0px;
+      }
+
+      svg {
+        #radialgreen {
+          animation: 1s ease-in 1.5s both fade-in-welcome;
+        }
+        #region-shadows {
+          animation: 0.5s ease-in 2s both fade-in-welcome;
+        }
+        #radialred {
+          animation: 0.5s ease-in 7.5s both fade-in-welcome;
+        }
+        #Details {
+          animation: 0.5s ease-in 11.5s both fade-in-welcome;
+        }
+
+        #radialred path {
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+          animation: 10s dash 8s ease-out forwards;
+          stroke-width: 3px;
+        }
+        #radialred path.highlightsPathFast {
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+          animation: 4s dash 8s ease-out forwards;
+          stroke-width: 3px;
+        }
+
+        #radialgreen path {
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+          animation: 4s dash 1s ease-out forwards;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fade-in-welcome {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

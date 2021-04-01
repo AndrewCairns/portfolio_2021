@@ -1,0 +1,239 @@
+.c-accordion {
+  &__bd {
+    display: none;
+  }
+  &__section.is-active > &__bd {
+    display: block;
+  }
+
+  .c-accordion__section {
+    & + .c-accordion__section {
+      &::before {
+        content: "";
+        display: block;
+        height: 1rem;
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__button {
+    .c-accordion__hd-icon {
+      transform: rotate(0deg);
+      transition: transform 0.2s ease;
+    }
+
+    &--istrigger {
+      align-self: flex-start;
+      flex-shrink: 0;
+      margin: 1rem;
+      border: none;
+      background-color: transparent;
+
+      &.c-btn--icon {
+        &:focus {
+          box-shadow: 0 0 0 4 red;
+        }
+      }
+    }
+
+    @media (max-width: $medium) {
+      margin: 0;
+      &--istrigger {
+        &.c-btn--icon {
+          margin: 1rem 0 1rem 0;
+        }
+      }
+    }
+  }
+
+  &__inner-bd {
+    margin: 0 10rem;
+    padding: 2rem;
+    @media (max-width: $medium) {
+      margin: 0;
+    }
+  }
+
+  &__hd {
+    align-items: center;
+    background-color: white;
+    color: black;
+
+    &-title {
+      color: black;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.2;
+      position: relative;
+
+      &span {
+        position: relative;
+      }
+      &::before {
+        background-color: transparent;
+        bottom: 0;
+        content: "";
+        height: 48%;
+        left: 0;
+        position: absolute;
+        transition: background-color 0.2s;
+        width: 100%;
+      }
+    }
+
+    &-subtitle {
+      color: black;
+      font-weight: 400;
+    }
+
+    &--headertrigger {
+      .c-accordion__button {
+        border-radius: 0;
+        flex-direction: row-reverse;
+        height: auto;
+        justify-content: space-between;
+        min-height: 0;
+        padding: 0;
+        position: relative;
+        text-align: left;
+
+        &:hover {
+          background-color: transparent;
+
+          .c-accordion__hd-iconwrapper {
+            background-color: $brand-color-primary;
+            box-shadow: 0 0 0 2 cyan;
+          }
+        }
+
+        &:focus {
+          background-color: transparent;
+          box-shadow: none;
+          .c-accordion__hd-iconwrapper {
+            background-color: $brand-color-primary;
+            box-shadow: 0 0 0 2 cyan;
+          }
+        }
+
+        &:active {
+          background-color: transparent;
+          box-shadow: none;
+          .c-accordion__hd-iconwrapper {
+            background-color: $brand-color-primary;
+            box-shadow: none;
+            color: $brand-color-secondary;
+          }
+        }
+
+        > .c-accordion__hd-iconwrapper {
+          transition: background-color 0.2s ease;
+        }
+
+        @media (max-width: $medium) {
+          margin: 0;
+        }
+      }
+
+      .c-accordion__section.is-active & {
+        &:hover {
+          .c-accordion__hd-title {
+            &::before {
+              background-color: transparent;
+            }
+          }
+        }
+        &:focus {
+          background-color: transparent;
+        }
+      }
+
+      @media (max-width: $medium) {
+        .c-btn--icon {
+          height: 2rem;
+          margin: 1rem 0;
+          width: 2rem;
+        }
+      }
+    }
+
+    &body {
+      align-items: center;
+      display: flex;
+      padding-left: 2rem;
+      width: 100%;
+
+      & > .c-btn {
+        align-items: baseline;
+        margin: 1rem 0 1rem 0;
+      }
+
+      .c-accordion__hd--right:not(.c-accordion__hd-headertrigger) & {
+        padding-left: 0;
+        padding-right: 1rem;
+      }
+
+      .c-accordion__hd--headertrigger & {
+        padding: 0;
+      }
+    }
+
+    &content {
+      padding: 2rem;
+      width: 100%;
+
+      .c-accordion__hd--headertrigger & {
+        padding-left: 4rem;
+      }
+      .c-accordion__hd-right.c-accordion__hd--headertrigger {
+        padding-left: 1rem;
+        padding-right: 4rem;
+      }
+    }
+
+    &--right {
+      color: red;
+      .c-accordion__button {
+        > .c-accordion__hd-iconwrapper {
+          flex-shrink: 0;
+          left: auto;
+          right: 1rem;
+        }
+      }
+      .c-accordion__button--istrigger {
+        order: 3;
+      }
+    }
+
+    &--top {
+      .c-accordion__button {
+        align-self: flex-start;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  &__hd-iconwrapper {
+    > svg {
+      margin-right: 0;
+    }
+  }
+
+  &__section {
+    &.is-active {
+      .c-accordion__hd {
+        button {
+          .c-accordion__hd-icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .c-accordion__bd {
+        display: block;
+        color: white;
+      }
+    }
+  }
+}
