@@ -3,11 +3,14 @@ import { Section, useScrollSection } from "react-scroll-section";
 import { Grid, Row, Col } from "react-flexbox-grid";
 import IndexBlock from "../../components/indexBlock/indexBlock";
 import Accordion from "../../components/accordion/accordion";
+import Tabs from "../../components/tabs/tabs";
 
 function Experience() {
   const experience = useScrollSection("experience-Section");
 
   const [activeArea, setActiveArea] = useState(false);
+
+  const [activeTab, setActiveTab] = useState(0);
 
   useEffect(() => {
     if (experience.selected) {
@@ -62,6 +65,74 @@ function Experience() {
                     Body child
                   </Accordion.Item>
                 </Accordion>
+
+                <Tabs
+                  tabs={[
+                    {
+                      label: "hit 1",
+                      id: "hit-1",
+                      content: <span> Hit 1</span>,
+                      onClick: () => {
+                        setActiveTab(0);
+                      },
+                    },
+                    {
+                      label: "hit 2",
+                      id: "hit-2",
+                      content: <span> Hit 2</span>,
+                      onClick: () => {
+                        setActiveTab(1);
+                      },
+                    },
+                    {
+                      label: "hit 3",
+                      id: "hit-3",
+                      content: <span> Hit 3</span>,
+                      onClick: () => {
+                        setActiveTab(2);
+                      },
+                    },
+                    {
+                      label: "hit 4",
+                      id: "hit-4",
+                      content: <span> Hit 4</span>,
+                      onClick: () => {
+                        setActiveTab(3);
+                      },
+                    },
+                  ]}
+                />
+
+                <div className="c-tabs__container">
+                  <div
+                    className={`c-tabs__container--block ${
+                      activeTab === 0 ? "is-active" : ""
+                    }`}
+                  >
+                    Hello 1
+                  </div>
+                  <div
+                    className={`c-tabs__container--block ${
+                      activeTab === 1 ? "is-active" : ""
+                    }`}
+                  >
+                    Hello 2
+                  </div>
+                  <div
+                    className={`c-tabs__container--block ${
+                      activeTab === 2 ? "is-active" : ""
+                    }`}
+                  >
+                    Hello 3
+                  </div>
+                  <div
+                    className={`c-tabs__container--block ${
+                      activeTab === 3 ? "is-active" : ""
+                    }`}
+                  >
+                    Hello 4
+                  </div>
+                </div>
               </Col>
             </Row>
           </Grid>
