@@ -42,31 +42,34 @@ function Experience() {
                 </h3>
                 <hr className="hr--short hr--brand-secondary u-vr-top--md" />
 
-                <Accordion isHeaderTrigger triggerRight collapseOthers>
-                  <Accordion.Item
-                    headerTitle="Title One"
-                    headerSubTitle="Subtitle one"
-                    headerChildren={<div>head child here</div>}
-                  >
-                    Body child
-                  </Accordion.Item>
-                  <Accordion.Item
-                    headerTitle="Title two"
-                    headerSubTitle="Subtitle two"
-                    headerChildren={<div>head child here</div>}
-                  >
-                    Body child
-                  </Accordion.Item>
-                  <Accordion.Item
-                    headerTitle="Title three"
-                    headerSubTitle="Subtitle three"
-                    headerChildren={<div>head child here</div>}
-                  >
-                    Body child
-                  </Accordion.Item>
-                </Accordion>
+                <div class="u-hidden@xsmall">
+                  <Accordion isHeaderTrigger triggerRight collapseOthers>
+                    <Accordion.Item
+                      headerTitle="Title One"
+                      headerSubTitle="Subtitle one"
+                      headerChildren={<div>head child here</div>}
+                    >
+                      Body child
+                    </Accordion.Item>
+                    <Accordion.Item
+                      headerTitle="Title two"
+                      headerSubTitle="Subtitle two"
+                      headerChildren={<div>head child here</div>}
+                    >
+                      Body child
+                    </Accordion.Item>
+                    <Accordion.Item
+                      headerTitle="Title three"
+                      headerSubTitle="Subtitle three"
+                      headerChildren={<div>head child here</div>}
+                    >
+                      Body child
+                    </Accordion.Item>
+                  </Accordion>
+                </div>
 
                 <Tabs
+                  comparison
                   tabs={[
                     {
                       label: "hit 1",

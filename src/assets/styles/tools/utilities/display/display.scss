@@ -1,0 +1,43 @@
+.u-hidden {
+  display: none;
+}
+
+@media (max-width: $xsmall) {
+  .u-hidden\@xsmall {
+    display: none;
+  }
+
+  .u-visible\@xsmall {
+    display: block;
+  }
+}
+
+@media (min-width: $small) {
+  .u-hidden\@small {
+    display: none;
+  }
+
+  .u-visible\@small {
+    display: block;
+  }
+}
+
+@media (min-width: $medium) {
+  .u-hidden\@medium {
+    display: none;
+  }
+
+  .u-visible\@medium {
+    display: block;
+  }
+}
+
+@media (min-width: $large) {
+  .u-hidden\@large {
+    display: none;
+  }
+
+  .u-visible\@large {
+    display: block;
+  }
+}
