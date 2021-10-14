@@ -1,21 +1,8 @@
 @import "./normalise/normalise.scss";
 @import "./tools/tools.scss";
+@import "./root.scss";
 @import "./content/content.scss";
 @import "./containers/container.scss";
 @import "./layout/layout.scss";
 
 @import "./theme.scss";
-
-* {
-  box-sizing: border-box;
-}
-
-html *:not(svg text) {
-  font-family: $font-brand-primary;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-svg text {
-  stroke: none;
-}

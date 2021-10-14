@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html:not(svg text) {
+  font-family: $font-brand-primary;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+
+svg text {
+  stroke: none;
+}

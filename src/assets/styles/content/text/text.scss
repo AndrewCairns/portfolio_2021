@@ -46,7 +46,7 @@ p {
   padding: 0.5rem 0;
   font-size: 1rem;
   color: $primary-text-color;
-  line-height: 1.375rem;
+  line-height: 1.5rem;
   max-width: 500px;
 }
 
@@ -58,11 +58,17 @@ span {
 a {
   color: $primary-text-color;
   text-decoration: none;
-  border-bottom: 3px solid $secondary-text-color;
+
+  img {
+    padding: 0;
+    transition: border 0.25s ease-in-out;
+  }
 }
 
 a:hover {
-  border-bottom: 5px solid $secondary-text-color;
+  img {
+    border: 3px solid $secondary-text-color;
+  }
 }
 
 ul {

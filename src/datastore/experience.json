@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "company": "Rapid 7",
+    "role": "Sr. Front-end Engineer",
+    "date": "April 2021 - Present",
+    "description": "Hired as a UX specialist, aiming to bridge the gap between design & engineering. Play a key role in developing a robust design system which gets a product to market quickly, facilitates progressive enhancements, and embodies the core principals of Rapid7. This process developed a deep understanding of the roles involved, their working process and their expected deliverables. In this role, I have also played a leading role in the tech-stack upgrade from AngualrJS/Angular 11 to a new, modern, React/Next.js application.",
+    "imgs": [
+      {
+        "src": "../../../assets/images/Rapid-7-Logo.png",
+        "title": "Rapid 7",
+        "url": "https://www.rapid7.com/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "company": "AllState NI",
+    "role": "(Sr.) Front-end Engineer",
+    "date": "Aug 2018 - March 2021",
+    "description": "Led the front end engineering team within Allstates Online Sales department. This focused on developing and enhancing the current front end framework, incorporating new technologies, teaching and training fellow colleagues, conducting code/work-effort reviews communication between teams. A key part of this process was discussing and developing visual designs from a front-end perspective, working alongside UX researchers, UX architects, visual designers and content strategists. This process developed a deep understanding of the roles involved, their working process and their expected deliverables.  I have further worked within the research and development sector of Allstate working on a broad range of subject areas. Duties include, dissemination of knowledge gained, summary reports, demonstrations of product potential, UI/UX, development and assessment, Artificial Intelligence (AI), chatbots, and data visualisation.",
+    "imgs": [
+      {
+        "src": "../../../assets/images/Allstate-Logo.png",
+        "title": "AllState",
+        "url": "https://www.allstate.com/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "company": "Clinisent",
+    "role": "KTP Associate",
+    "date": "Sept 2017 - July 2018",
+    "description": "Job description: Facilitation of the transfer of knowledge from academia to industry.  Project lead in the design, development and implementation of a novel and secure data analytics platform & analysis service for use with private hospitals, laboratories and citizens to encourage patient and public involvement in research.",
+    "imgs": [
+      {
+        "src": "../../../assets/images/Clinisent-Logo.png",
+        "title": "Clinisent",
+        "url": "https://www.voscuris.com/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "company": "Ulster University",
+    "role": "PhD researcher",
+    "date": "Aug 2014 - Aug 2017",
+    "description": " I have completed a PhD in computer science with a thesis entitled “Interactive Computing to Augment the Human Interpretation of the 12-lead Electrocardiogram”. ",
+    "imgs": [
+      {
+        "src": "../../../assets/images/Ulster-Logo.png",
+        "title": "Ulster University",
+        "url": "https://www.ulster.ac.uk/"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "company": "Ulster University",
+    "role": "Undergraduate",
+    "date": "Sept 2010 - July 2014",
+    "description": "I graduated with First Class Honours, among top of my class, as an undergraduate in Interactive Multimedia and Design.",
+    "imgs": [
+      {
+        "src": "../../../assets/images/Ulster-Logo.png",
+        "title": "Ulster University",
+        "url": "https://www.ulster.ac.uk/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "company": "Misc. Freelance",
+    "role": "Front-end Engineer",
+    "date": "Sept 2010 - Present",
+    "description": "Please reach out to find out more about my other work and freelance roles, including data visualisation, stock management systems, graphic design, and academic achievements.",
+    "imgs": [
+      {
+        "src": "../../../assets/images/AMPS-Logo.png",
+        "title": "AMPS-LLC",
+        "url": "http://www.amps-llc.com/"
+      },
+      {
+        "src": "../../../assets/images/pp-Logo.png",
+        "title": "Principal Pastry",
+        "url": "https://principalpastry.co.uk/"
+      },
+      {
+        "src": "../../../assets/images/CinC-Logo.png",
+        "title": "Computing in Cardiology",
+        "url": "https://www.cinc.org/"
+      },
+      {
+        "src": "../../../assets/images/Ulster-Logo.png",
+        "title": "Ulster University",
+        "url": "https://www.ulster.ac.uk/"
+      },
+      {
+        "src": "../../../assets/images/Blooie-Logo.png",
+        "title": "Bloo.ie (Start up) - Defunct"
+      },
+      {
+        "src": "../../../assets/images/Audacious-Logo.png",
+        "title": "Audacious (Start up) - Defunct"
+      },
+      {
+        "src": "../../../assets/images/face-comm-Logo.jpeg",
+        "title": "Face Communications",
+        "url": "https://cornellstudios.com/"
+      },
+      {
+        "src": "../../../assets/images/JECG-Logo.png",
+        "title": "Journal of Electrocardiology",
+        "url": "https://www.journals.elsevier.com/journal-of-electrocardiology"
+      },
+      {
+        "src": "../../../assets/images/JoBioMS-Logo.png",
+        "title": "Journal of Biomedical Informatics",
+        "url": "https://www.sciencedirect.com/journal/journal-of-biomedical-informatics"
+      }
+    ]
+  }
+]

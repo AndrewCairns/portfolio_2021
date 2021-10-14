@@ -1,30 +1,19 @@
 import React, { useEffect, useContext } from "react";
-import PropTypes, { bool } from "prop-types";
-import Button from "../../button/button";
+import PropTypes from "prop-types";
 import generateID from "../../../utilities/generateID/generateID";
 import { AccordionToggleContext } from "../../accordion/accordionContext";
-import { createVertexShader } from "@tensorflow/tfjs-backend-webgl/dist/gpgpu_util";
-import { ReactComponent as Logo } from "../../../../assets/images/logo.svg";
-
-/**
- * @property accordionItem.propTypes
- * @type {Object}
- * @static
- */
+import { ReactComponent as Chevron } from "../../../../assets/images/chevron-down.svg";
 
 const accordionItemPropTypes = {
   className: PropTypes.string,
   isActive: PropTypes.bool,
-  isHeaderTrigger: PropTypes.bool,
   toggleAccordion: PropTypes.func,
-  headerChildren: PropTypes.node,
   headerTitle: PropTypes.string,
   headerSubTitle: PropTypes.string,
+  headerTitleHighlight: PropTypes.string,
   onOpen: PropTypes.func,
   onClose: PropTypes.func,
   triggerRight: PropTypes.bool,
-  triggerTop: PropTypes.bool,
-  triggerText: PropTypes.string,
   onClickTrigger: PropTypes.func,
   children: PropTypes.node,
   parentId: PropTypes.string,
@@ -40,16 +29,13 @@ const accordionItemPropTypes = {
 const accordionItemDefualtProps = {
   className: "",
   isActive: false,
-  isHeaderTrigger: false,
   toggleAccordion: () => {},
-  headerChildren: null,
   headerTitle: null,
   headerSubTitle: null,
+  headerTitleHighlight: null,
   onOpen() {},
   onClose() {},
   triggerRight: false,
-  triggerTop: false,
-  triggerText: null,
   onClickTrigger: null,
   children: <></>,
   parentId: "",
@@ -59,16 +45,13 @@ const accordionItemDefualtProps = {
 const AccordionItem = ({
   className,
   isActive,
-  isHeaderTrigger,
   toggleAccordion,
-  headerChildren,
   headerTitle,
   headerSubTitle,
+  headerTitleHighlight,
   onOpen,
   onClose,
   triggerRight,
-  triggerTop,
-  triggerText,
   onClickTrigger,
   children,
   parentId,
@@ -125,130 +108,82 @@ const AccordionItem = ({
         headingId,
         headerTitle,
         headerSubTitle,
-        triggerTop,
+        headerTitleHighlight,
+        accordionItemDefualtProps,
         triggerRight,
-        triggerText,
-        isHeaderTrigger,
-        headerChildren,
       })}
-      <div id={bodyId} role="tabpanel" aria-labelledby={headingId}>
-        {active && (
-          <div className="c-accordion__bd">
-            <div className="c-accordion__inner-bd">{children}</div>
-          </div>
-        )}
+      <div
+        id={bodyId}
+        className="c-accordion__outer-bd"
+        role="tabpanel"
+        aria-labelledby={headingId}
+      >
+        <div className="c-accordion__bd">
+          <div className="c-accordion__inner-bd">{children}</div>
+        </div>
       </div>
     </div>
   );
 };
 
-function createChevron(triggerText) {
-  return triggerText ? (
-    <span className="c-accordion__triggertext">{triggerText}</span>
-  ) : (
+function createChevron() {
+  return (
     <div className="c-accordion__hd-icon">
-      <Logo />
+      <Chevron />
     </div>
   );
 }
 
 function renderHeaderContent(headerOptions) {
-  const { headerTitle, headerSubTitle, headerChildren } = headerOptions;
+  const { headerTitle, headerSubTitle, headerTitleHighlight } = headerOptions;
   return (
     <div className="c-accordion__hdcontent">
-      <div>
-        {headerTitle && (
-          <div className="c-accordion__hd-title">
-            <span>{headerTitle}</span>
-          </div>
-        )}
-        {headerSubTitle && (
-          <span className="c-accordion__hd-subtitle">{headerSubTitle}</span>
-        )}
-      </div>
-      {headerChildren && (
-        <div className="c-accordion__hd-children">{headerChildren}</div>
+      {headerTitle && (
+        <div className="c-accordion__hd-title">
+          {headerTitleHighlight && (
+            <span className="txt--12 txt--black">{headerTitleHighlight}</span>
+          )}
+          <span className="txt--10"> / {headerTitle}</span>
+        </div>
+      )}
+      {headerSubTitle && (
+        <span className="c-accordion__hd-subtitle txt--10">
+          {headerSubTitle}
+        </span>
       )}
     </div>
   );
 }
 
 function createHeader(headerOptions) {
-  const {
-    active,
-    triggerRight,
-    triggerTop,
-    triggerText,
-    isHeaderTrigger,
-  } = headerOptions;
-  const chevron = createChevron(triggerText);
+  const { triggerRight } = headerOptions;
+  const chevron = createChevron();
 
   return (
     <div
       className={`c-accordion__hd ${
         triggerRight ? "c-accordion__hd--right" : ""
-      } ${triggerTop ? "c-accordion__hd--top" : ""} ${
-        isHeaderTrigger
-          ? "c-accordion__hd--headertrigger"
-          : "c-accordion__hd--icontrigger"
       }`}
     >
       <div className="c-accordion__hdbody">
         {renderTrigger(chevron, headerOptions)}
-        {!isHeaderTrigger && renderHeaderContent(headerOptions)}
+        {renderHeaderContent(headerOptions)}
       </div>
     </div>
   );
 }
 
 function renderTrigger(chevron, headerOptions) {
-  const {
-    onClick,
-    bodyId,
-    active,
-    headingId,
-    headerTitle,
-    headerSubTitle,
-    triggerText,
-    isHeaderTrigger,
-    headerChildren,
-  } = headerOptions;
+  const { onClick } = headerOptions;
 
-  if (!isHeaderTrigger) {
-    return (
-      <button
-        className="c-accordion__button c-accordion__button--istrigger"
-        onClick={onClick}
-      >
-        {chevron}
-      </button>
-    );
-  } else {
-    return (
-      <button varient="c-accordion__button" onClick={onClick}>
-        <div className="c-accordion__hd-iconwrapper c-btn c-btn--icon">
-          {chevron}
-        </div>
-        <div className="c-accordion_hdcontent">
-          <div>
-            {headerTitle && (
-              <div className="c-accordion__hd-title">
-                <span>{headerTitle}</span>
-              </div>
-            )}
-            {headerSubTitle && (
-              <div className="c-accordion__hd-subtitle">
-                <span>{headerSubTitle}</span>
-              </div>
-            )}
-          </div>
-          {headerChildren && (
-            <div className="c-accordion__hd-children">{headerChildren}</div>
-          )}
-        </div>
-      </button>
-    );
-  }
+  return (
+    <button
+      className="c-accordion__button c-accordion__button--istrigger"
+      onClick={onClick}
+    >
+      {chevron}
+    </button>
+  );
 }
 
 AccordionItem.propTypes = accordionItemPropTypes;

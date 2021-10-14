@@ -8,7 +8,6 @@ const accordionPropTypes = {
   className: PropTypes.string,
   collapseOthers: PropTypes.bool,
   triggerRight: PropTypes.bool,
-  isHeaderTrigger: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element),
@@ -19,9 +18,8 @@ const accordionPropTypes = {
 
 const accordionDefaultProps = {
   className: "",
-  collapseOthers: false,
+  collapseOthers: true,
   triggerRight: false,
-  isHeaderTrigger: false,
   children: <></>,
   id: "",
   varient: "white",
@@ -56,7 +54,6 @@ const Accordion = ({
   className,
   collapseOthers,
   triggerRight,
-  isHeaderTrigger,
   children,
   id,
   varient,
@@ -86,7 +83,6 @@ const Accordion = ({
         i,
         setActiveStates
       ),
-      isHeaderTrigger,
       triggerRight,
       varient,
     });

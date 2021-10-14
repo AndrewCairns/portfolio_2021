@@ -1,0 +1,33 @@
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+
+  th {
+    text-align: left;
+  }
+
+  tbody {
+    border: none;
+
+    tr {
+      &.hiddenRow {
+        transition: max-height 1.5s ease cubic-bezier(0, 1.05, 0, 1);
+        max-height: 38px;
+      }
+      &.activeRow {
+        transition: max-height 2s ease;
+        max-height: 400px;
+      }
+
+      td {
+        text-align: left;
+        border-top: 1px solid $base-white;
+
+        &.noBorder {
+          border-top: none;
+        }
+      }
+    }
+  }
+}

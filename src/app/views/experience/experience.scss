@@ -26,6 +26,22 @@
       .contentLocationArea {
         animation: 0.5s ease-in 11.5s both fade-in-welcome;
       }
+
+      .stacks {
+        ul {
+          list-style: none;
+          padding-top: calc(1.5rem + 5px);
+          padding-left: 0;
+        }
+        > div > div:last-child {
+          h3 {
+            border-bottom: 5px solid $brand-color-secondary;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1em;
+            width: 30%;
+          }
+        }
+      }
     }
   }
 
