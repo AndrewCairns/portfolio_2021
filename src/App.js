@@ -14,6 +14,7 @@ import { ScrollingProvider } from "react-scroll-section";
 import Engineer from "./app/views/engineer/engineer";
 import Experiment from "./app/views/experiment/experiment";
 import Experience from "./app/views/experience/experience";
+import Contact from "./app/views/contact/contact";
 
 function App() {
   var getDate = new Date();
@@ -32,8 +33,10 @@ function App() {
               </div>
               <nav>
                 <ul>
-                  <li className="txt--14">
-                    <Link to="/contact">Contact</Link>
+                  <li className="txt--12">
+                    <a href="#contact-Section" title="Contact">
+                      Contact
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -46,6 +49,7 @@ function App() {
           <Experiment />
           <Experience />
           <VerticalNav />
+          <Contact />
 
           <div className="c-contain">
             <Switch>
@@ -53,29 +57,33 @@ function App() {
             </Switch>
           </div>
 
-          <footer className="u-p-gi">
+          <footer className="u-p-enormous">
             <div className="c-contain">
               <div>
                 <img src={logo} alt="Andrew Cairns' logo" />
-                <p className="txt--14">
-                  © {getYear} Andrew Cairns. All rights reserved.
-                </p>
+                <p>© {getYear} Andrew Cairns. All rights reserved.</p>
               </div>
 
               <div className="socials">
-                <a href="mailto:cairns-a3@ulster.ac.uk">
+                <a href="mailto:awcairns7@ulster.ac.uk" className="u-ph-gi">
                   <img src={mail} alt="Andrew Cairns' mail link" />
                 </a>
-                <a href="https://github.com/AndrewCairns">
+                <a href="https://github.com/AndrewCairns" className="u-ph-gi">
                   <img src={github} alt="Andrew Cairns' github link" />
                 </a>
-                <a href="https://www.linkedin.com/in/andrew-cairns-15888853/">
+                <a
+                  href="https://www.linkedin.com/in/andrew-cairns-15888853/"
+                  className="u-ph-gi"
+                >
                   <img src={linkedin} alt="Andrew Cairns' linkedin link" />
                 </a>
-                <a href="https://twitter.com/cairnsy17">
+                <a href="https://twitter.com/cairnsy17" className="u-ph-gi">
                   <img src={twitter} alt="Andrew Cairns' twitter link" />
                 </a>
-                <a href="https://www.instagram.com/cairnsy17/">
+                <a
+                  href="https://www.instagram.com/cairnsy17/"
+                  className="u-ph-gi"
+                >
                   <img src={insta} alt="Andrew Cairns' instagram link" />
                 </a>
               </div>

@@ -27,6 +27,23 @@
         animation: 0.5s ease-in 11.5s both fade-in-welcome;
       }
 
+      a {
+        opacity: 0.9;
+
+        img {
+          padding: 0;
+          transition: border 0.25s ease-in-out;
+        }
+      }
+
+      a:hover {
+        opacity: 1;
+
+        img {
+          border: 3px solid $secondary-text-color;
+        }
+      }
+
       .stacks {
         ul {
           list-style: none;

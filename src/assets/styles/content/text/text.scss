@@ -56,18 +56,12 @@ span {
 }
 
 a {
-  color: $primary-text-color;
+  color: $secondary-text-color;
   text-decoration: none;
+  opacity: 0.8;
 
-  img {
-    padding: 0;
-    transition: border 0.25s ease-in-out;
-  }
-}
-
-a:hover {
-  img {
-    border: 3px solid $secondary-text-color;
+  &:hover {
+    opacity: 1;
   }
 }
 

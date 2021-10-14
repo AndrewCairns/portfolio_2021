@@ -6,6 +6,7 @@ html:not(svg text) {
   font-family: $font-brand-primary;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
   font-size: 14px;
 }
 
